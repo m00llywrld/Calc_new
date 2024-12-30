@@ -2,7 +2,11 @@ body{
     background-color: black;
 }
 .title{
+    padding-top: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 .calculator{
     margin:auto auto;
@@ -38,4 +42,10 @@ input{
     height: 20px;
     border-radius: 5px;
     border: none;
+}
+.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 3px;
 }

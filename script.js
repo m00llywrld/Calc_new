@@ -5,6 +5,10 @@ function calculate () {
     var num1 = Number(document.getElementById('textInput1').value)
     var num2 = Number(document.getElementById('textInput2').value)
 
+    if (!op) {
+        document.getElementById("outputField").value = 'Ошибка: Оператор не выбран';
+        return;
+    }
     switch (op){
         case '+':
         result = num1 + num2
@@ -25,4 +29,26 @@ function calculate () {
     }
     document.getElementById("outputField").value = result;
 }
-calculate()
+document.getElementById("plus").onclick = function() {
+    op = '+';
+    console.log("Выбран оператор: " + op);
+    this.classList.toggle("active")
+};
+
+document.getElementById("minus").onclick = function() {
+    op = '-';
+    console.log("Выбран оператор: " + op);
+    this.classList.toggle("active")
+};
+
+document.getElementById("times").onclick = function() {
+    op = '*';
+    console.log("Выбран оператор: " + op);
+    this.classList.toggle("active")
+};
+
+document.getElementById("divide").onclick = function() {
+    op = '/';
+    console.log("Выбран оператор: " + op);
+    this.classList.toggle("active")
+};
