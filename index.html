@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <h1 class="title">Calculator online</h1>
+            <div class="elements">
+                <div class="resultField">
+                    <input type="text" id="outputField" value="Результат" readonly>
+                </div>
+                <div class="firstInput">
+                    <input id="textInput1" placeholder="Введите первое число">
+                </div>
+                <div id="operator_btns">
+                    <button id="plus" onclick="op='+'">+</button>
+                    <button id="minus" onclick="op='-'">-</button>
+                    <button id="times" onclick="op='*'">x</button>
+                    <button id="divide" onclick="op='/'">:</button>
+                  </div>
+                <div class="secondInput">
+                    <input id="textInput2" placeholder="Введите второе число">
+                </div>
+                <button class="confirm" onclick="calculate()">Посчитать</button>
+            </div>    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
