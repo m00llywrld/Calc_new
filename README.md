@@ -1,0 +1,1 @@
+Hello there! I'm Daniel and this is a simple version of Calculator, written using HTML, CSS and Javascript. Think I'll add some updates in the future
