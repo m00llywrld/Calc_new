@@ -1,6 +1,9 @@
 body{
     background-color: black;
 }
+.wrapper{
+    max-width: 500px;
+}
 .title{
     padding-top: 10px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
