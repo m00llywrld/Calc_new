@@ -52,3 +52,11 @@ document.getElementById("divide").onclick = function() {
     console.log("Выбран оператор: " + op);
     this.classList.toggle("active")
 };
+function clearFields() {
+    // Очистка поля input
+    document.getElementById('textInput1').value = '';
+    document.getElementById('textInput2').value = '';
+    
+    // Очистка поля output
+    document.getElementById('outputField').innerText = '';
+}
